@@ -65,7 +65,7 @@ fun MainScreen() {
 
         Spacer(modifier = Modifier.height(24.dp))
 
-        // 1. INTENT EXPLÍCITO: Abre ProfileActivity enviando datos[cite: 13]
+        // 1. INTENT EXPLÍCITO: Abre ProfileActivity enviando datos
         Button(
             onClick = {
                 val intent = Intent(context, ProfileActivity::class.java).apply {
@@ -81,7 +81,7 @@ fun MainScreen() {
 
         Spacer(modifier = Modifier.height(12.dp))
 
-        // 2. INTENT IMPLÍCITO: Solicita al sistema compartir texto[cite: 14]
+        // 2. INTENT IMPLÍCITO: Solicita al sistema compartir texto
         OutlinedButton(
             onClick = {
                 val sendIntent = Intent(Intent.ACTION_SEND).apply {
